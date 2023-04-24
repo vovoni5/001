@@ -62,17 +62,6 @@ void SmallerSumLines(int[,] matrix)
     }
 }
 
-void PrintArray(int[] arr)
-{
-    Console.Write("[");
-    for (int i = 0; i < arr.Length; i++)
-    {
-        if (i < arr.Length - 1) Console.Write($"{arr[i]}, ");
-        else Console.Write($"{arr[i]}");
-    }
-    Console.Write("]");
-}
-
 Console.Clear();
 int[,] array2d = CreateMatrixRndInt(4, 4, -10, 10);
 PrintMatrix(array2d);
